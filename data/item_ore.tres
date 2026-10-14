@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FactoryItem" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_item.gd" id="1_016h0"]
+
+[resource]
+script = ExtResource("1_016h0")
+id = &"ore"
+display_name = "Ore"
+color = Color(0.70980394, 0.39607844, 0.11372549, 1)

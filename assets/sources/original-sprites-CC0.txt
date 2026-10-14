@@ -1,0 +1,2 @@
+The pixel sprites in assets/sprites/ are original art made for Factory Core by its author (tools/art/make_art.py in the Pro kit)
+and dedicated to the public domain under CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/

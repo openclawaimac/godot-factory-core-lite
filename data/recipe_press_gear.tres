@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FactoryRecipe" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_recipe.gd" id="1_uwopg"]
+
+[resource]
+script = ExtResource("1_uwopg")
+id = &"press_gear"
+inputs = Dictionary[StringName, int]({
+&"plate": 2
+})
+outputs = Dictionary[StringName, int]({
+&"gear": 1
+})
+time_ticks = 45

@@ -1,0 +1,7 @@
+# Factory Core Lite
+> Free MIT deterministic belt + machine factory simulation for Godot 4.7 (headless, tested). Pro edition (commercial EULA) adds build mode, power, tunnels, tiers, undo/blueprints and a full demo.
+- README.md: API, layout, Lite vs Pro
+- addons/factory_core/sim/factory_sim.gd: FactorySim (step, link, report, to_save/load_save)
+- addons/factory_core/nodes/: belts, sources, sinks, machines, splitter, merger
+- examples/production_chain.gd: example chain
+- examples/demo.gd: CC0 sprite demo (main scene)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FactoryRecipe" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_recipe.gd" id="1_h2rsw"]
+
+[resource]
+script = ExtResource("1_h2rsw")
+id = &"smelt_plate"
+inputs = Dictionary[StringName, int]({
+&"ore": 1
+})
+outputs = Dictionary[StringName, int]({
+&"plate": 1
+})
+power_w = 150

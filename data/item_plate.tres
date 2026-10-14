@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FactoryItem" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_item.gd" id="1_6mxo0"]
+
+[resource]
+script = ExtResource("1_6mxo0")
+id = &"plate"
+display_name = "Plate"
+color = Color(0.7529412, 0.78431374, 0.8156863, 1)

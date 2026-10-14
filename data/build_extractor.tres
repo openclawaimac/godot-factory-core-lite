@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_ig4ef"]
+
+[resource]
+script = ExtResource("1_ig4ef")
+id = &"extractor"
+display_name = "Extractor"
+kind = &"source"
+cost = Dictionary[StringName, int]({
+&"credits": 10
+})
+hotbar_slot = 1
+color = Color(0.5411765, 0.3529412, 0.16862746, 1)
+item = &"ore"
+interval_ticks = 40
+power_w = 50

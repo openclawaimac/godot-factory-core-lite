@@ -1,0 +1,18 @@
+{
+  "items": [
+    {"id": "ore", "name": "Ore", "color": "#8a6f5a"},
+    {"id": "plate", "name": "Plate", "color": "#c7d0e0"},
+    {"id": "gear", "name": "Gear", "color": "#a6b0c2"}
+  ],
+  "recipes": [
+    {"id": "smelt_plate", "in": {"ore": 1}, "out": {"plate": 1}, "ticks": 60, "power_w": 150},
+    {"id": "press_gear", "in": {"plate": 2}, "out": {"gear": 1}, "ticks": 45, "power_w": 100}
+  ],
+  "buildables": [
+    {"id": "extractor", "name": "Extractor", "kind": "source", "slot": 1, "item": "ore", "interval_ticks": 40, "power_w": 50},
+    {"id": "belt", "name": "Belt", "kind": "belt", "slot": 2, "speed": 8},
+    {"id": "smelter", "name": "Smelter", "kind": "machine", "slot": 3, "recipe": "smelt_plate"},
+    {"id": "press", "name": "Press", "kind": "machine", "slot": 4, "recipe": "press_gear"},
+    {"id": "sink", "name": "Storage", "kind": "sink", "slot": 5}
+  ]
+}

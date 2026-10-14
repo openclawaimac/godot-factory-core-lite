@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_h2wtk"]
+
+[resource]
+script = ExtResource("1_h2wtk")
+id = &"sink"
+display_name = "Sink"
+kind = &"sink"
+cost = Dictionary[StringName, int]({
+&"credits": 5
+})
+hotbar_slot = 8
+color = Color(0.22745098, 0.22745098, 0.22745098, 1)

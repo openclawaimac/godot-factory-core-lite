@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_408xm"]
+
+[resource]
+script = ExtResource("1_408xm")
+id = &"merger"
+display_name = "Merger"
+kind = &"merger"
+cost = Dictionary[StringName, int]({
+&"credits": 5
+})
+hotbar_slot = 4
+color = Color(0.2901961, 0.70980394, 0.6039216, 1)

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_tg1d7"]
+
+[resource]
+script = ExtResource("1_tg1d7")
+id = &"press"
+display_name = "Press"
+kind = &"machine"
+cost = Dictionary[StringName, int]({
+&"credits": 30
+})
+hotbar_slot = 6
+color = Color(0.70980394, 0.627451, 0.2901961, 1)
+recipe = &"press_gear"

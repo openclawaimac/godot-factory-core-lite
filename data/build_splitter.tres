@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_h761e"]
+
+[resource]
+script = ExtResource("1_h761e")
+id = &"splitter"
+display_name = "Splitter"
+kind = &"splitter"
+cost = Dictionary[StringName, int]({
+&"credits": 5
+})
+hotbar_slot = 3
+color = Color(0.2901961, 0.49803922, 0.70980394, 1)

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FactoryBuildable" format=3]
+
+[ext_resource type="Script" path="res://addons/factory_core/data/factory_buildable.gd" id="1_v46os"]
+
+[resource]
+script = ExtResource("1_v46os")
+id = &"smelter"
+display_name = "Smelter"
+kind = &"machine"
+cost = Dictionary[StringName, int]({
+&"credits": 25
+})
+hotbar_slot = 5
+color = Color(0.70980394, 0.3529412, 0.2901961, 1)
+recipe = &"smelt_plate"

@@ -1,0 +1,6 @@
+.godot/
+*.tmp
+export/
+export_presets.cfg
+tests/last_run.txt
+.DS_Store
