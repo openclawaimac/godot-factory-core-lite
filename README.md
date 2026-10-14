@@ -1,12 +1,35 @@
 # Factory Core Lite – Godot 4 factory & automation starter (free, MIT)
 
-**Deterministic, headless-tested conveyor belts, machines, splitters and mergers for your Godot 4 automation / Factorio-like game.**
+**Factory Core Lite is a free, MIT-licensed Godot 4 factory / automation starter kit / project template in typed GDScript.**
+
+[![Godot 4.7](https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white)](https://godotengine.org) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Tests: 65 passing](https://img.shields.io/badge/tests-65%20passing-brightgreen)](tools/run_tests.sh) [![Pro: €16](https://img.shields.io/badge/Pro-%E2%82%AC16-ff5c5c)](https://huginhelm.itch.io/factory-core)
+
+- **Engine:** Godot 4.7 (tested on 4.7.2) · **Language:** typed GDScript · **Licence:** MIT
+- **Tests:** 65 headless checks passing (`bash tools/run_tests.sh`)
+- **Website:** https://openclawaimac.github.io/factory-core/ · **Pro edition (€16, 245 tests, commercial EULA):** https://huginhelm.itch.io/factory-core
+- **For AI agents:** [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt)
 
 ![Demo](docs/demo.gif)
 
-▶️ **[Play the web demo](https://huginhelm.itch.io/factory-core)** · ⭐ **[Get Factory Core Pro](https://huginhelm.itch.io/factory-core)**
+## Quickstart
+```bash
+git clone https://github.com/openclawaimac/godot-factory-core-lite.git && cd godot-factory-core-lite
+godot --headless --path . --import      # first import (registers class_name scripts)
+bash tools/run_tests.sh /path/to/godot  # expect: RESULT: PASS 65 checks
+godot --path .                          # run the demo (or open project.godot and press F5)
+```
+To use it in your own game, copy `addons/factory_core/` into your project.
 
-Godot **4.7** (tested on 4.7.2) · typed GDScript · MIT · v0.5.0
+## Lite vs Pro (summary)
+| | Lite (this repo) | Pro |
+|---|---|---|
+| Price | Free | €16 |
+| Licence | MIT | Commercial per-seat EULA |
+| Headless tests | 65 | 245 |
+| Same API | ✅ | ✅ (upgrade without code changes) |
+| Where | https://github.com/openclawaimac/godot-factory-core-lite | [https://huginhelm.itch.io/factory-core](https://huginhelm.itch.io/factory-core) |
+
+Full comparison below and on https://openclawaimac.github.io/factory-core/
 
 ## Features
 - Integer fixed-tick simulation (60 ticks/s) – same inputs, same state; runs fully headless

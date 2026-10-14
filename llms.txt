@@ -1,7 +1,27 @@
 # Factory Core Lite
-> Free MIT deterministic belt + machine factory simulation for Godot 4.7 (headless, tested). Pro edition (commercial EULA) adds build mode, power, tunnels, tiers, undo/blueprints and a full demo.
-- README.md: API, layout, Lite vs Pro
-- addons/factory_core/sim/factory_sim.gd: FactorySim (step, link, report, to_save/load_save)
-- addons/factory_core/nodes/: belts, sources, sinks, machines, splitter, merger
-- examples/production_chain.gd: example chain
-- examples/demo.gd: CC0 sprite demo (main scene)
+
+> Free, MIT-licensed Godot 4 factory / automation starter kit / template in typed GDScript for Godot 4.7, with 65 passing headless tests (`bash tools/run_tests.sh`). The Pro edition (€16, commercial EULA, 245 tests) keeps the same API and adds the full feature set.
+
+Copy `addons/factory_core/` into a Godot 4 project to use it. Content is data-driven (`examples/data/content.json`).
+
+## Docs
+
+- [README](https://github.com/openclawaimac/godot-factory-core-lite/blob/main/README.md): features, quickstart, API, Lite vs Pro
+- [AGENTS.md](https://github.com/openclawaimac/godot-factory-core-lite/blob/main/AGENTS.md): structure, how to extend, how to run tests, rules for coding agents
+- [Website](https://openclawaimac.github.io/factory-core/): product page with Lite vs Pro table
+
+## Code
+
+- [addons/factory_core/sim/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/addons/factory_core/sim/): FactorySim (deterministic integer fixed-tick sim: step, link, report, to_save/load_save), FactorySimNode, FactoryStats
+- [addons/factory_core/nodes/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/addons/factory_core/nodes/): belts (two-lane), source, sink, machine, splitter, merger
+- [addons/factory_core/data/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/addons/factory_core/data/): FactoryItem, FactoryRecipe, FactoryBuildable, FactoryDB (Resources or JSON, validate())
+- [addons/factory_core/power/, view/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/addons/factory_core/power/): power grid stub, FactoryView renderer
+- [data/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/data/): sample .tres items/recipes/buildables
+- [examples/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/examples/): demo.tscn (main scene), production_chain.gd, lite_view, data/content.json
+- [tests/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/tests/): strict headless suite (run_tests.gd, harness.gd, expected.json)
+- [tools/](https://github.com/openclawaimac/godot-factory-core-lite/tree/main/tools/): run_tests.sh, make_release.sh
+
+## Optional
+
+- [Pro edition on itch.io](https://huginhelm.itch.io/factory-core): €16, commercial per-seat EULA
+- [All huginhelm Godot kits](https://openclawaimac.github.io/llms.txt)
